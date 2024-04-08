@@ -317,7 +317,15 @@ a{
     text-align: center;
 }
 
-button {
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.saibaMais {
     background-color: black;
     color: #fff;
     border: none;
@@ -328,7 +336,20 @@ button {
     align-self: center;
 }
 
-button:hover {
+.saibaMais:hover {
+    background-color: #0056b3;
+}
+
+.maisProjetos{
+    padding: 5px;
+    color: white;
+    background: black;
+}
+
+.maisProjetos p{
+    color: white;
+}
+.maisProjetos:hover {
     background-color: #0056b3;
 }
 

@@ -18,11 +18,11 @@ function Inicio() {
                         <h1>Olá, sou a Lara!</h1>
                         <br />
                         <p>Desenvolvedora de softwares, focada em desenvolvimento web.</p>
-                        <a href="https://github.com/LaraGuedes" target="_blank">
+                        <a href="https://www.linkedin.com/in/lara-caleg%C3%A1rio-guedes-293559267/" target="_blank">
                             <img src={Linkedin} alt="" className="logo" />
                         </a>
                         <a
-                            href="https://www.linkedin.com/in/lara-caleg%C3%A1rio-guedes-293559267/"
+                            href="https://github.com/LaraGuedes"
                             target="_blank"
                         >
                             <img src={Git} alt="" className="logo"/>

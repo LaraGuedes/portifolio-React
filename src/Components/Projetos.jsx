@@ -14,12 +14,13 @@ return(
                 <div className="imagem-projeto">
                     <img src={Fantastika} alt="" width="100%"/>
                 </div>
-                <div>
+                <div className="texto">
                     <p>
-
+                        Projeto feito em HTML e CSS durante o curso, além disso nesse projeto foi utilizada tecnica de versionamento de código.
                     </p>
+                    <br />
                     <a href="https://laraguedes.github.io/Fantasia/" target="_blank" className="link-saiba-mais">
-                        <button>Saiba mais</button>
+                        <button className="saibaMais">Saiba mais</button>
                     </a>
                 </div>
             </div>
@@ -27,17 +28,17 @@ return(
                 <div className="imagem-projeto">
                     <img src={Roupas} alt="" width="100%"/>
                 </div>
-                <div>
+                <div className="texto">
                     <p>
-
+                    Projeto feito em HTML e CSS durante o curso, para aprofundar os conhecimentos obtidos durante o curso.
                     </p>
                     <a href="https://laraguedes.github.io/lojaDeRoupas/" target="_blank" className="link-saiba-mais">
-                        <button>Saiba mais</button>
+                        <button className="saibaMais">Saiba mais</button>
                     </a>
                 </div>
             </div>
         </div>
-        <a href="https://github.com/LaraGuedes" target="_blank"><p className="mais">MAIS PROJETOS</p></a>
+        <button className="maisProjetos"><a href="https://github.com/LaraGuedes" target="_blank"><p className="mais">MAIS PROJETOS</p></a></button>
         </div>
     </S.sectionProjetos>
 )
