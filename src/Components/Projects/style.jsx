@@ -1,7 +1,10 @@
 // import styled from "styled-components";
 
 // export const OrganizeCard = styled.div`
-//     text-align: center;
-//     padding: 20px;
+//     padding: 0 20%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
 
 // `

@@ -20,10 +20,13 @@ export const Button = styled.button`
         text-decoration: none;
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .img{
-        padding: 7px;
-        border-radius: 10px;
+        padding: 2px;
+        width: 30px;
     }
 `

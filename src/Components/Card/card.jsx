@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import { CardContainer } from './style'; // Ajuste o caminho conforme necessário
+import { CardContainer } from './style'; 
+import Button from "../Button/button";
 
-const Card = ({ title, description, imageUrl, buttonText }) => {
+// Imagens
+import Github from "/public/icones/github.png";
+import Deploy from "/public/icones/deploy.png";
+
+const Card = ({ title, description, imageUrl, buttonLink, deploy }) => {
     const ref = useRef();
 
     useEffect(() => {
@@ -32,9 +37,14 @@ const Card = ({ title, description, imageUrl, buttonText }) => {
     return (
         <CardContainer ref={ref}>
             <img src={imageUrl} alt={title} className="card-image" />
-            <h3 className="card-title">{title}</h3>
-            <p className="card-description">{description}</p>
-            <button className="card-button">{buttonText}</button>
+            <div className='about'>
+                {/* <h3 className="card-title">{title}</h3> */}
+                <p className="card-description">{description}</p>
+                <div className="card-button">
+                    <Button link={buttonLink} name="GitHub" describe="GitHub" img={Github}/>
+                    <Button link={deploy} name="Deploy" describe="Deploy" img={Deploy}/>
+                </div>
+            </div>
         </CardContainer>
     );
 };
