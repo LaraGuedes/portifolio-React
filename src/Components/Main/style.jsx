@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+
     .about {
         flex-direction: column;
         justify-content: start;
         align-items: start;
         margin-top: 90px;
         position: relative;
-        padding: 0 10%;
     }
 
     .name {
@@ -33,8 +37,17 @@ export const Container = styled.div`
         position: relative;
     }
 
+    .photo {
+        position: relative;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    
+
     @media (min-width: 900px) {
-        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: start;
@@ -47,11 +60,11 @@ export const Container = styled.div`
     }
 
     @media (max-width: 900px) {
-        display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+        text-align: center;
 
         .research {
             flex-direction: column;
@@ -70,5 +83,6 @@ export const Container = styled.div`
         p {
             text-align: center;
         }
+
     }
 `;

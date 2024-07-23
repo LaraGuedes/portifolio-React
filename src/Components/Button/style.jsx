@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-
 export const Button = styled.button`
     border: 0.5px solid white;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -14,19 +13,24 @@ export const Button = styled.button`
     font-weight: 800;
     font-size: 18px;
     background-color: white;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-    .link{
+    &:hover {
+        background-color: #f0f0f0;
+        transform: translateY(-5px);
+    }
+
+    .link {
         color: black;
         text-decoration: none;
         cursor: pointer;
-        transition: transform 0.3s ease-in-out;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .img{
+    .img {
         padding: 2px;
         width: 30px;
     }
-`
+`;

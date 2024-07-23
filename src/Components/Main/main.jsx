@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
+
+// Componentes
 import Button from "../Button/button";
-import * as S from "./style";
 
 // Icones
-import Github from "/public/icones/github.png";
-import Linkedin from "/public/icones/linkedin.png";
+import Github from "/icones/github.png";
+import Linkedin from "/icones/linkedin.png";
+
+// Estilo
+import * as S from "./style";
 
 function Main(props) {
     const [displayedJobText, setDisplayedJobText] = useState("");
@@ -48,19 +52,17 @@ function Main(props) {
                         link="https://github.com/LaraGuedes"
                         img={Github}
                         describe="GitHub"
-                    >
-                    </Button>
+                    />
                     <Button 
                         name="Linkedin" 
                         link="https://www.linkedin.com/in/lara-caleg%C3%A1rio-guedes/"
                         img={Linkedin}
                         describe="Linkedin"
-                    >
-                    </Button>
+                    />
                 </div>
             </div>
-            <div className="img">
-                    <img src={props?.img} alt={props?.describe} width="100%"/>
+            <div className="photo">
+                <img src={props?.img} alt={props?.describe} width="100%"/>
             </div>
         </S.Container>
     );

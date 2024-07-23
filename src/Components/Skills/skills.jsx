@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Element from "../Element/element";
+
+// Componentes
+import Element from "./Componet/Element/element";
+
+// Estilo
 import * as S from "./style";
 
 // GIFs
@@ -51,7 +55,7 @@ function Skills(props) {
 
     return (
         <S.SkillsComponent ref={ref}>
-            <motion.div 
+            <motion.div
                 initial={{ x: '100%', opacity: 0 }}
                 animate={visible ? { x: 0, opacity: 1 } : { x: '100%', opacity: 0 }}
                 transition={{ duration: 1 }}
@@ -59,19 +63,19 @@ function Skills(props) {
                 <h2 className="h1">Tecnologias</h2>
                 <div>
                     {habilidades.map((habilidade, index) => (
-                        <Element 
-                            key={index} 
-                            img={habilidade?.imagem} 
-                            name={habilidade?.nome} 
-                            describe={habilidade?.describe} 
+                        <Element
+                            key={index}
+                            img={habilidade?.imagem}
+                            name={habilidade?.nome}
+                            describe={habilidade?.describe}
                         />
                     ))}
                 </div>
                 {gifs.map((gif, index) => (
-                    <S.CornerGif 
-                        key={index} 
-                        src={gif?.src} 
-                        className={gif?.className} 
+                    <S.CornerGif
+                        key={index}
+                        src={gif?.src}
+                        className={gif?.className}
                         alt={`Corner GIF ${index}`}
                     />
                 ))}

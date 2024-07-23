@@ -59,7 +59,7 @@ export const FormContainer = styled.div`
   button {
     padding: 10px;
     font-size: 16px;
-    background-color: #f7b600;
+    background-color: #C9A9AE;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -91,12 +91,12 @@ export const FormContainer = styled.div`
   }
 
   .contact-info img {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 0.3px solid white;
     padding: 5px;
-    background: var(--white);
+    background: #C9A9AE;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
     object-fit: cover;
   }

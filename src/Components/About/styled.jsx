@@ -5,8 +5,6 @@ export const AboutDiv = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    gap: 50px;
     overflow: hidden;
 
     .photo {
@@ -45,18 +43,27 @@ export const AboutDiv = styled.div`
     justify-content: center;
     }
 
+    @media (min-width: 900px) {
+        gap: 50px;
+        margin-top: 80px;
+    }
+
     @media (max-width: 900px) {
-    .photo {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 50px;
 
-    .about {
-        margin-left: 0;
-    }
+        .photo {
+            width: 80%;
+            margin-bottom: 20px;
+        }
 
-    .containerBtn {
-        margin-top: 20px;
-    }
+        .about {
+            margin-left: 0;
+        }
+
+        .containerBtn {
+            margin-top: 20px;
+        }
     }
 `;

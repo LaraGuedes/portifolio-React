@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { CardContainer } from './style'; 
-import Button from "../Button/button";
+import { CardContainer } from './style';
+import Button from "../../../Button/button";
 
 // Imagens
 import Github from "/public/icones/github.png";
@@ -38,11 +38,10 @@ const Card = ({ title, description, imageUrl, buttonLink, deploy }) => {
         <CardContainer ref={ref}>
             <img src={imageUrl} alt={title} className="card-image" />
             <div className='about'>
-                {/* <h3 className="card-title">{title}</h3> */}
                 <p className="card-description">{description}</p>
                 <div className="card-button">
-                    <Button link={buttonLink} name="GitHub" describe="GitHub" img={Github}/>
-                    <Button link={deploy} name="Deploy" describe="Deploy" img={Deploy}/>
+                    <Button link={buttonLink} name="GitHub" describe="GitHub" img={Github} />
+                    <Button link={deploy} name="Deploy" describe="Deploy" img={Deploy} />
                 </div>
             </div>
         </CardContainer>

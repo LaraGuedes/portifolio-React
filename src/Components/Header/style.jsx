@@ -12,6 +12,10 @@ export const DivHeader = styled.div`
     right: 0;
     bottom: 0;
 
+    .logo{
+        width: 120px;
+    }
+
     @media (min-width: 900px) {
         height: 150px;
         display: flex;
@@ -20,5 +24,9 @@ export const DivHeader = styled.div`
 
     @media (max-width: 900px) {
         height: 100px; 
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
     }
 `;

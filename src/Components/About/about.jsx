@@ -1,14 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+
+// Componentes
 import Button from "../Button/button";
-import * as S from "./styled";
 
 // Curriculo
 import Curriculo from "../../assets/curriculo.pdf";
 
 // Icones
-import Download from "/public/icones/download.png";
+import Download from "/icones/download.png";
+
+// Estilo
+import * as S from "./styled";
 
 function About(props) {
     const { ref: refInView, inView } = useInView({
@@ -23,13 +27,13 @@ function About(props) {
 
     return (
         <S.AboutDiv ref={refInView}>
-            <motion.div 
+            <motion.div
                 className="photo"
                 initial={{ x: '-100%', opacity: 0 }}
                 animate={inView ? { x: 0, opacity: 1 } : outOfView ? { x: '-100%', opacity: 0 } : {}}
                 transition={{ duration: 1 }}
             >
-                <img src={props?.img} alt="" width="100%" />
+                <img src={props?.img} alt="Imagem" width="100%" />
             </motion.div>
             <div className="about">
                 <h2 className="h2">
@@ -39,24 +43,23 @@ function About(props) {
                     {props?.name} <span className="point">...</span>
                 </h1>
                 <p className="p">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis nesciunt a optio in ipsam maxime sint incidunt praesentium esse soluta adipisci, animi placeat reprehenderit rerum fugiat ad unde quae cupiditate harum nemo autem eius at? Sed deserunt facilis sint repellat. Explicabo, animi delectus amet est consectetur distinctio sint ipsa.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, cum sit? Quas corporis libero temporibus quaerat repellat officia repudiandae similique nulla, nisi excepturi sunt soluta laudantium maxime beatae odit necessitatibus!
+                    {props?.about}
                 </p>
-                <motion.div 
+                <motion.div
                     className="containerBtn"
                     initial={{ x: '100%', opacity: 0 }}
                     animate={inView ? { x: 0, opacity: 1 } : outOfView ? { x: '100%', opacity: 0 } : {}}
                     transition={{ duration: 1 }}
                 >
-                    <Button 
-                        name="Curriculo" 
+                    <Button
+                        name="Curriculo"
                         link={Curriculo}
                         img={Download}
                         describe="Curriculo"
                     />
                 </motion.div>
             </div>
-            <div ref={refOutView} style={{ position: 'absolute', bottom: '100vh' }} />
+            <div ref={refOutView} />
         </S.AboutDiv>
     );
 }

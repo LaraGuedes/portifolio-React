@@ -18,10 +18,10 @@ function Element(props) {
             className={isClicked ? 'clicked' : ''}
             onClick={handleElementClick}
         >
-            <img 
-                src={props?.img} 
-                alt={props?.describe} 
-                className={`img ${isClicked ? 'clicked' : ''}`} 
+            <img
+                src={props?.img}
+                alt={props?.describe}
+                className={`img ${isClicked ? 'clicked' : ''}`}
             />
             <p className="text">{props?.name}</p>
         </S.ContainerElement>

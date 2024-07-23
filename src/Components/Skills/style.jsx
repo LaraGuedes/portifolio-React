@@ -6,7 +6,6 @@ export const SkillsComponent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
   position: relative;
   overflow: hidden;
 
@@ -25,6 +24,14 @@ export const SkillsComponent = styled.div`
     gap: 10px;
     max-width: 800px;
   }
+
+  @media (min-width: 900px) {
+        margin-top: 80px;
+    }
+
+    @media (max-width: 900px) {
+      margin-top: 50px;
+    }
 `;
 
 export const CornerGif = styled.img`
