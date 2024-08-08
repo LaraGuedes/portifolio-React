@@ -77,7 +77,7 @@ function Projects() {
     };
 
     return (
-        <OrganizeCard>
+        <OrganizeCard className="projects-section">
             <h1 className="title">Projetos</h1>
             <div className="modalCard">
                 {allCardsData.slice(0, visibleCards).map((card, index) => (

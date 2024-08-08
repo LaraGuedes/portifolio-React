@@ -24,7 +24,6 @@ export const ContainerElement = styled.div`
   }
 
   .img {
-    filter: grayscale(1);
     margin-top: 0.7rem;
     width: 80px;
     transition: filter 0.3s ease;
@@ -33,6 +32,10 @@ export const ContainerElement = styled.div`
   @media screen and (min-width: 900px) {
     .img.clicked {
       filter: grayscale(0);
+    }
+
+    .img{
+      filter: grayscale(1);
     }
   }
 

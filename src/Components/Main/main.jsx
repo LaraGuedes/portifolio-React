@@ -11,6 +11,7 @@ import Linkedin from "/icones/linkedin.png";
 import * as S from "./style";
 
 function Main(props) {
+    // State pesa, ver formas de usar menos
     const [displayedJobText, setDisplayedJobText] = useState("");
     const [displayedExText, setDisplayedExText] = useState("");
     const [jobTextIndex, setJobTextIndex] = useState(0);
@@ -40,7 +41,7 @@ function Main(props) {
     }, [exTextIndex, exText]);
 
     return (
-        <S.Container>
+        <S.Container className='main-section'>
             <div className="about">
                 <p className="name">{props?.name}</p>
                 <h1 className="job">{displayedJobText}</h1>

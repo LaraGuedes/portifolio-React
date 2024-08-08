@@ -23,7 +23,6 @@ export const OrganizeCard = styled.div`
 
     .highlight {
         font-weight: bold;
-        // color: #007bff; /* Ajuste a cor conforme necessário */
     }
 
     @media (min-width: 900px) {

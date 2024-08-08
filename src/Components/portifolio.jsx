@@ -8,9 +8,10 @@ import About from "./About/about";
 import Form from "./Form/form";
 import Footer from "./Footer/footer"
 import Skills from "./Skills/skills";
+import Certificados from "./Certificados/certificados";
 
 // Imagens
-import fotoPrincipal from "/public/imagensPorfolio/fotoPrincipal.png";
+import fotoPrincipal from "/imagensPorfolio/fotoPrincipal.png";
 import imagemSobre from "/imagensPorfolio/imagemSobre.png";
 import Logo from "/imagensPorfolio/logo-transparente.png"
 
@@ -39,6 +40,7 @@ function Portifolio() {
       <Header
         name="Lara"
         links={["Inicio", "Sobre", "Projetos", "Contato"]}
+        names={["main-section", "about-section", "projects-section", "contact-section"]}
         img={Logo}
         describe="Logo"
       />
@@ -64,6 +66,7 @@ function Portifolio() {
       <Skills />
       <Projects />
       <Form></Form>
+      {/* <Certificados></Certificados> */}
       <Footer></Footer>
     </div>
   );

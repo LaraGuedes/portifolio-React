@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Button from "../Button/button";
 
 // Curriculo
-import Curriculo from "../../assets/curriculo.pdf";
+import Curriculo from "../../assets/curriculo.pdf"; // Coloca na pasta do public
 
 // Icones
 import Download from "/icones/download.png";
@@ -26,7 +26,7 @@ function About(props) {
     });
 
     return (
-        <S.AboutDiv ref={refInView}>
+        <S.AboutDiv ref={refInView} className='about-section'>
             <motion.div
                 className="photo"
                 initial={{ x: '-100%', opacity: 0 }}

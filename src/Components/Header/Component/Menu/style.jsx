@@ -11,9 +11,27 @@ export const Ul = styled.ul`
     gap: 4vw;
     font-size: 18px;
 
-    .li{
+    .li {
         padding: 10px;
+        cursor: pointer;
+        position: relative; 
     }
+
+    .li::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px; 
+        background-color: transparent; 
+        transition: background-color 0.3s ease; 
+    }
+
+    .li:hover::after {
+        background-color: #C9A9AE; 
+    }
+
 
     @media (max-width: 900px) {
         display: none;

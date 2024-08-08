@@ -12,7 +12,7 @@ function Header(props) {
             <div className="logo">
                 <img src={props?.img} alt={props?.describe} width="100%" />
             </div>
-            <Menu links={props?.links}>
+            <Menu links={props?.links} names={props?.names}>
             </Menu>
         </S.DivHeader>
     )
